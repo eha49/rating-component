@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *:before,
+  *::after {
+    @apply box-border font-overpass;
+  }
+
+  html,
+  body {
+    @apply h-full;
+  }
+
+  #root {
+    @apply min-h-full flex justify-center items-center;
+  }
+}
