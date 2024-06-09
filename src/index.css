@@ -15,6 +15,16 @@
   }
 
   #root {
-    @apply min-h-full flex justify-center items-center;
+    @apply min-h-full flex justify-center items-center bg-very-dark-blue px-3;
+  }
+}
+
+@layer components {
+  .card {
+    @apply w-72 max-w-full bg-dark-blue p-8 rounded-3xl;
+  }
+
+  .card-description {
+    @apply text-xs text-light-grey mt-3;
   }
 }

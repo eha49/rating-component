@@ -1,5 +1,21 @@
+import React from "react";
+import RatingCard from "./RatingCard/RatingCard";
+import SubmitCard from "./Submit/SubmitCard";
+
 function App() {
-  return <h1>This is a heading</h1>;
+  const [isSubmitted, setIsSubmitted] = React.useState(true);
+
+  function handleSubmission() {
+    setIsSubmitted(true);
+  }
+  return (
+    <>
+      {!isSubmitted && (
+        <RatingCard handleSubmission={handleSubmission} />
+      )}
+      {isSubmitted && <SubmitCard />}
+    </>
+  );
 }
 
 export default App;
