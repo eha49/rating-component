@@ -1,19 +1,22 @@
 import React from "react";
 import RatingCard from "./RatingCard/RatingCard";
 import SubmitCard from "./Submit/SubmitCard";
+import RatingProvider from "./RatingProvider/RatingProvider";
 
 function App() {
-  const [isSubmitted, setIsSubmitted] = React.useState(true);
+  const [isSubmitted, setIsSubmitted] = React.useState(false);
 
   function handleSubmission() {
     setIsSubmitted(true);
   }
   return (
     <>
-      {!isSubmitted && (
-        <RatingCard handleSubmission={handleSubmission} />
-      )}
-      {isSubmitted && <SubmitCard />}
+      <RatingProvider>
+        {!isSubmitted && (
+          <RatingCard handleSubmission={handleSubmission} />
+        )}
+        {isSubmitted && <SubmitCard />}
+      </RatingProvider>
     </>
   );
 }
