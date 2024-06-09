@@ -17,7 +17,7 @@ function RatingCard({ handleSubmission }) {
         Please let us know how we did with your support request. All
         feedback is appreciated to help us improve our offering!
       </p>
-      <RatingForm />
+      <RatingForm handleSubmission={handleSubmission} />
     </article>
   );
 }

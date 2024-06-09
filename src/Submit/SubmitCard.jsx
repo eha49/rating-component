@@ -13,7 +13,7 @@ function SubmitCard() {
         />
       </div>
       <p className="text-xs text-amber-500 bg-gray-700 px-3 py-2 mt-6 rounded-full">
-        You selected {rating} out of 5 stars
+        You selected {rating} out of 5
       </p>
       <p className="text-xl text-white font-medium mt-5">
         Thank you!
