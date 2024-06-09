@@ -21,7 +21,7 @@
 
 @layer components {
   .card {
-    @apply w-72 max-w-full bg-dark-blue p-8 rounded-3xl;
+    @apply w-80 max-w-full bg-dark-blue p-8 rounded-3xl;
   }
 
   .card-description {
